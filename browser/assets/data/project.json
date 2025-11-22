@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "SimpsonExplorer V1",
+    "description": "Proyecto de práctica usando 'The Simpson API' para explorar personajes y datos de la serie. Incluye algunos juegos. Toda la información está en inglés, ya que así viene desde la API y quise mantener una misma línea.",
+    "url": "https://neoarayarojas.github.io/simpson-explorer/",
+    "tecnologies": ["Angular", "HTML", "CSS", "Bootstrap"]
+  },
+  {
+    "id": 4,
+    "name": "Timer cube",
+    "description": "Uno de mis hobbies es resolver cubos Rubik, así que creé este apartado sencillo con un cronómetro y una mezcla sugerida para el cubo 3x3.",
+    "url": "timer-cube",
+    "tecnologies": ["Angular", "HTML", "CSS", "Bootstrap"]
+  },
+  {
+    "id": 5,
+    "name": "Github",
+    "description": "Puedes encontrar más proyectos en mi GitHub. Actualmente estoy subiendo nuevos trabajos, aunque algunos no pueden hacerse públicos porque fueron desarrollados para terceros",
+    "url": "https://github.com/Neoarayarojas"
+  }
+]

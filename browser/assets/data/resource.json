@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "name": "Guía básica Python (En proceso)",
+    "description": "Conceptos fundamentales del lenguaje Python desde lo más esencial hasta estructuras y ejercicios prácticos para aprender de manera progresiva.",
+    "url": "",
+    "sections": [
+      {
+        "type": "text",
+        "data": "Bienvenido, en esta guía aprenderemos lo básico de Python. Sí, lo básico, pero con estos fundamentos podrás crear programas, resolver problemas y construir proyectos escalables más adelante."
+      },
+      {
+        "type": "text",
+        "data": "Primero debemos conocer algunos conceptos importantes."
+      },
+      {
+        "type": "list",
+        "data": [
+          "Lenguaje de programación: Conjunto de símbolos y reglas que permiten comunicarse con una computadora mediante instrucciones.",
+          {
+            "type": "list",
+            "data": [
+              "Lenguajes de alto nivel: Más fáciles de leer y escribir, como Python, Java, C#.",
+              "Lenguajes de bajo nivel: Más cercanos al hardware, como ensamblador."
+            ]
+          },
+          "Programa: Conjunto de instrucciones que permiten resolver un problema.",
+          "Algoritmo: Secuencia ordenada de pasos lógicos para resolver un problema."
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "¿Qué es Python?"
+      },
+      {
+        "type": "text",
+        "data": "Python es un lenguaje de programación de alto nivel creado por Guido van Rossum. Destaca por su sintaxis clara, su facilidad para aprenderlo y su enorme comunidad. Se utiliza en desarrollo web, ciencia de datos, inteligencia artificial, automatización, creación de videojuegos y mucho más."
+      },
+      {
+        "type": "text",
+        "data": "Algo importante: Python es un lenguaje interpretado, dinámico y multiplataforma, lo que significa que puedes ejecutar el mismo código en Windows, Linux o macOS sin cambios."
+      },
+
+      {
+        "type": "text",
+        "data": "Comentarios"
+      },
+      {
+        "type": "text",
+        "data": "Los comentarios son líneas de texto dentro del código que Python no ejecuta. Estas se pueden ir agregando para definir lo que se realizará, para explicar o recordar qué hace una parte del programa, entre otros usos."
+      },
+      {
+        "type": "list",
+        "data": [
+          "Comentario de una línea:",
+          {
+            "type": "list",
+            "data": [
+              { "type": "code", "data": "#Este es un comentario de una línea" },
+              "Se coloca el simbolo '#' antes del mensaje "
+            ]
+          },
+          "Comentario de múltiples líneas: \"\"\" así se escribe \"\"\"",
+          {
+            "type": "list",
+            "data": [
+              {
+                "type": "code",
+                "data": "'''\nEste es un comentario de varias lineas\n1\n2\n'''\n\n\n'''\nTambién se puede una sola linea\n'''"
+              },
+              "Se coloca ''' antes y despues del mensaje, OJO con la indentación. La cual se explica a continuación"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "data": "¿Qué es la indentación?"
+      },
+      {
+        "type": "text",
+        "data": "La indentación en Python es el espacio que se coloca al inicio de una línea. Python usa estos espacios para entender qué instrucciones pertenecen juntas."
+      },
+      {
+        "type": "text",
+        "data": "A diferencia de otros lenguajes, Python NO usa llaves {}. Todo se organiza visualmente con sangrías (indentación)."
+      },
+      {
+        "type": "text",
+        "data": "Ejemplo visual"
+      },
+      {
+        "type": "code",
+        "data": "if edad >= 18:\n    print('Eres mayor de edad')\n    print('Puedes ingresar')\nprint('Fin del programa')"
+      },
+      {
+        "type": "list",
+        "data": [
+          {
+            "type": "text",
+            "data": "Las líneas con espacios (indentadas) dependen del bloque anterior."
+          },
+          {
+            "type": "text",
+            "data": "Sin la indentación correcta, Python mostrará un error."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "data": "Otro ejemplo"
+      },
+      {
+        "type": "code",
+        "data": "for i in range(3):\n    print('Nivel 1')\n    for j in range(2):\n        print('Nivel 2')"
+      },
+      {
+        "type": "text",
+        "data": "Cada bloque dentro de otro debe aumentar su indentación."
+      },
+
+      {
+        "type": "text",
+        "data": "Tipos de datos"
+      },
+      {
+        "type": "list",
+        "data": [
+          "int (entero) Ej: 5, 100",
+          "float (decimal) Ej: 1.2, 3.14",
+          "str (cadena) Ej: \"hola\"",
+          "bool (booleano) Ej: True o False",
+          "list (lista) Ej: [1, 2, 3]"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Asignación de variables"
+      },
+      {
+        "type": "code",
+        "data": [
+          "numero = 5\nnumero_decimal = 1.2\nmensaje = \"hola\"\nbandera = True\nmi_lista = [1, 2, 3]"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Palabras reservadas"
+      },
+      {
+        "type": "text",
+        "data": "Son palabras que Python reserva para acciones específicas, por lo que no puedes usarlas como nombres de variables."
+      },
+      {
+        "type": "list",
+        "data": [
+          "and as assert break class continue def del elif else except finally for from global if import in is lambda not or pass raise return try while with yield"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Leer desde teclado"
+      },
+      {
+        "type": "code",
+        "data": [
+          "#Entero:\nnumero = int(input(\"Ingrese un número: \"))\n\n#Flotante:\ndecimal = float(input(\"Ingrese un valor: \"))\n\n#Cadena:\ntexto = input(\"Ingrese texto: \")\n\n#Booleano:\nbandera = bool(input(\"Ingrese True o False: \"))"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Imprimir en pantalla"
+      },
+      {
+        "type": "code",
+        "data": "#Imprimir un caracter, palabra o frase\nprint(\"mensaje\")\n\n#Se define una variable para los próximos ejemplos\nvariable=3\n\n#imprimir el valor de una variable\nprint(variable)\n\n#Imprimira el texto asignado y luego el valor de la variable\nprint('Variable: ', variable)\n\n#También se puede hacer al revés, \n#primero el valor de la variable y luego el texto\nprint(varible, 'es el valor de la variable.'"
+      },
+
+      {
+        "type": "text",
+        "data": "Condicionales"
+      },
+      {
+        "type": "list",
+        "data": [
+          "if (si)",
+          "elif (si no, pero otra condición)",
+          "else (ninguna de las anteriores)"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Operadores de comparación"
+      },
+      {
+        "type": "list",
+        "data": [
+          "> mayor que",
+          ">= mayor o igual",
+          "== igual que",
+          "!= distinto que",
+          "< menor que",
+          "<= menor o igual"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Operadores matemáticos"
+      },
+      {
+        "type": "list",
+        "data": [
+          "+ suma",
+          "- resta",
+          "* multiplicación",
+          "/ división",
+          "% módulo",
+          "** potencia"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Operaciones avanzadas con la biblioteca math"
+      },
+      {
+        "type": "code",
+        "data": "import math\nmath.sqrt(4)\nmath.pow(2, 3)\nabs(-10)"
+      },
+
+      {
+        "type": "text",
+        "data": "Ciclos"
+      },
+      {
+        "type": "list",
+        "data": [
+          "while (mientras se cumpla la condición)",
+          "for (itera sobre elementos)"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Funciones"
+      },
+      {
+        "type": "text",
+        "data": "Dividir el código en funciones permite mantener el orden, reutilizar código y resolver problemas más fácilmente (divide y vencerás)."
+      },
+
+      {
+        "type": "text",
+        "data": "Definición de una función"
+      },
+      {
+        "type": "code",
+        "data": "def nombre_funcion(parametros):\n    return algo  # opcional"
+      },
+
+      {
+        "type": "text",
+        "data": "Ejemplo de función"
+      },
+      {
+        "type": "code",
+        "data": "def suma(a, b):\n    return a + b\n\nprint(suma(1, 4))"
+      },
+
+      {
+        "type": "text",
+        "data": "Métodos de strings (Faltan muchos)."
+      },
+      {
+        "type": "list",
+        "data": [
+          "len() #Nos devuelve un número entero correspondiente al largo del string",
+          ".upper() #Nos cambia todas las letras a mayúsculas",
+          ".lower() #Nos cambia todas las letras a minúsculas",
+          ".strip() #Quita todos los espacios en blanco",
+          ".replace(a, b) # reemplazar texto"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Listas"
+      },
+      {
+        "type": "text",
+        "data": "Una lista es una estructura que puede almacenar diferentes tipos de datos, incluso otras listas."
+      },
+      {
+        "type": "code",
+        "data": "# Lista vacía\nlista = []\n\n# Lista con elementos\nlista = [1, 2, 3]"
+      },
+
+      {
+        "type": "text",
+        "data": "Métodos de listas básicos (Faltan muchos)"
+      },
+      {
+        "type": "list",
+        "data": [
+          "len(lista) #Similar al método de string, pero en este caso nos entrega el largo de la lista.",
+          "append(valor) #Inserta un elemento al final.",
+          "insert(pos, valor) #Inserta dato en la posición que se le indica, OJO.",
+          "pop() #Elimina el último elemento.",
+          "sort() #Ordena la lista de menor a mayor",
+          "remove(valor) #Remueve el dato que se le indica, pero solo el primero que encuentra (Ojo, si hay más de uno)"
+        ]
+      },
+
+      {
+        "type": "text",
+        "data": "Recorrer una lista"
+      },
+      {
+        "type": "code",
+        "data": "lista = [1, 2, 3]\n\nfor elemento in lista:\n    print(elemento)"
+      },
+
+      {
+        "type": "text",
+        "data": "Ejercicios recomendados"
+      },
+      {
+        "type": "list",
+        "data": [
+          "Contar vocales en una palabra.",
+          "Encontrar el mayor y menor de una lista.",
+          "Contar apariciones de un elemento en una lista.",
+          "Mostrar asignaturas almacenadas en una lista.",
+          "Desglosar una cantidad de dinero en billetes y monedas."
+        ]
+      },
+      {
+        "type": "text",
+        "data": "Esta es la primera parte de la guía, pronto mejorare cada apartado de forma de facilitar el aprendizaje y añadire nuevas secciones. Entre ellas, como trabajar con interfaces gráficas, empezando con la más sencilla a mi parecer que es Tkinter."
+      },
+      {
+        "type": "text",
+        "data": "Un chiste para terminar"
+      },
+      {
+        "type": "text",
+        "data": "¿Cómo haces para programar tantas horas sin estresarte?"
+      },
+      {
+        "type": "text",
+        "data": "Ese es mi secreto… siempre estoy estresado."
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Top herramientas (En proceso)",
+    "description": "Una pequeña lista de aplicaciones muy útiles que utilizo en mi día a día. ",
+    "sections": [
+      {
+        "type": "text",
+        "data": "A continuación comparto una pequeña lista de aplicaciones que me gustan y que utilizo en mi día a día. Esta sección aún está en proceso, pero refleja varias herramientas que me acompañan tanto en desarrollo como en tareas generales."
+      },
+      {
+        "type": "list",
+        "data": [
+          "Ventoy: Permite crear un pendrive multiboot donde puedes copiar varios ISOs sin necesidad de formatear cada vez. Ideal para pruebas, instalaciones y mantenimiento de equipos.",
+          "Rufus: Herramienta sencilla y rápida para crear pendrives booteables a partir de imágenes ISO. Muy útil para instalaciones limpias de sistemas operativos.",
+          "Excalidraw: Aplicación para crear diagramas y bocetos con estilo de dibujo a mano, ideal para planificar interfaces, flujos o arquitecturas de forma rápida e intuitiva.",
+          "Bizagi Modeler: Software especializado para modelar procesos utilizando BPMN. Excelente para documentar flujos de negocio o entender pasos claves en un sistema.",
+          "Sublime Text: Editor de texto ligero y extremadamente rápido, ideal para trabajar con archivos simples, snippets o editar código rápidamente.",
+          "PeaZip: Compresor y descompresor de archivos con soporte para decenas de formatos. Ligero y totalmente gratuito.",
+          "DBeaver: Cliente universal de bases de datos que soporta PostgreSQL, MySQL, SQL Server, MongoDB y más. Muy usado por desarrolladores para consultar, visualizar y gestionar datos de forma cómoda.",
+          "Insomnia: Herramienta para realizar pruebas de APIs REST y GraphQL con una interfaz limpia y organizada. Ideal para entornos donde necesitas enfocarte en la simplicidad.",
+          "Postman: Plataforma completa para pruebas y documentación de APIs. Permite colecciones, ambientes, automatización y pruebas colaborativas entre equipos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Patrones de Diseño (En proceso)",
+    "description": "Guía práctica y conceptual sobre los patrones de diseño más utilizados en el desarrollo de software. Explica por qué existen, cuándo aplicarlos y cómo ayudan a escribir código más mantenible, escalable y limpio.",
+    "url": "",
+    "sections": [
+      {
+        "type": "text",
+        "data": "Bienvenido. En esta guía aprenderás qué son los patrones de diseño, por qué son importantes y cómo pueden ayudarte a crear software más profesional."
+      },
+      {
+        "type": "text",
+        "data": "Primero, veamos algunos conceptos fundamentales."
+      },
+      {
+        "type": "list",
+        "data": [
+          "Patrón de diseño: Es una solución general y reutilizable para un problema común en el desarrollo de software. No es código específico, sino una plantilla o guía.",
+          {
+            "type": "list",
+            "data": [
+              "Patrones de creación: Enfocados en cómo instanciar objetos de manera flexible y desacoplada. Ejemplos: Singleton, Factory Method, Builder.",
+              "Patrones estructurales: Se enfocan en cómo organizar y relacionar clases y objetos. Ejemplos: Adapter, Facade, Composite.",
+              "Patrones de comportamiento: Describen cómo los objetos interactúan y se comunican. Ejemplos: Strategy, Observer, Command."
+            ]
+          },
+          "Buenas prácticas: Los patrones no deben aplicarse por moda; solo cuando realmente resuelven un problema.",
+
+          "Código limpio: Los patrones facilitan el mantenimiento y escalabilidad del proyecto."
+        ]
+      },
+      {
+        "type": "text",
+        "data": "Clasificación de los patrones de diseño"
+      },
+      {
+        "type": "list",
+        "data": [
+          [
+            "1. Patrones de creación: Se enfocan en controlar la creación de objetos para hacer el sistema más flexible y extensible. Ejemplos famosos: Singleton, Factory Method, Abstract Factory, Builder, Prototype."
+          ],
+          [
+            "2. Patrones estructurales: Permiten estructurar clases y objetos para formar sistemas más grandes y reutilizables. Ejemplos: Adapter, Composite, Decorator, Facade, Flyweight, Proxy."
+          ],
+          [
+            "3. Patrones de comportamiento: Definen cómo los objetos interactúan y se reparten responsabilidades. Ejemplos: Strategy, Observer, Command, State, Iterator, Mediator."
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "data": "Ejemplos resumidos de patrones de diseño"
+      },
+      {
+        "type": "list",
+        "data": [
+          [
+            "Singleton: Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global."
+          ],
+          [
+            "Factory Method: Define un método para crear objetos sin especificar su clase concreta."
+          ],
+          [
+            "Strategy: Permite cambiar dinámicamente el comportamiento de un algoritmo mediante estrategias intercambiables."
+          ],
+          [
+            "Observer: Notifica automáticamente a múltiples objetos cuando el estado de otro objeto cambia."
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "data": "Ahora sí, ya tienes una pequeña noción de los patrones de diseño más usados en la industria. Pronto añadiré más información junto con ejemplos prácticos de cuándo usar cada patrón de diseño, además de código básico para replicar su comportamiento."
+      }
+    ]
+  }
+]
